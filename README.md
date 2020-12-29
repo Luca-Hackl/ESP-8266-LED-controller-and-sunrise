@@ -5,7 +5,7 @@
 * [General info](#general-info)
 * [Setup](#setup)
 * [Features](#Features)
-* [To-Do](#To Do)
+* [To-Do](#To-Do)
 
 ## General info
 Creates a website that can remote control LED to any color the user wishes and creates an alarm clock that simulates sunrise. The LED strip I used was the WS2812B with 60 LED's, if you have a different LED strip then you need to change the code. 
