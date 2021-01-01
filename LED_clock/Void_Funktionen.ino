@@ -52,7 +52,7 @@ void Alarm(){
 
     if(server.hasArg("tickthebox")){
       if (server.arg("tickthebox")=="ticked") {
-        alarm = true;                             //checks if the checkbox is checked, if it is it sets the alarm to true
+        alarm = true;                         
         server.send(200, "text/html", StartWebsite());
       }       
    }
