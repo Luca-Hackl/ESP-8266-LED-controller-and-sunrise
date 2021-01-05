@@ -1,5 +1,5 @@
 String AnfangA  =   "<!DOCTYPE html> <html>\n"
-                    "<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">\n"                  //CSS for cosmetics
+                    "<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, charset=utf-8, charset=\"ISO-8859-1\", user-scalable=no\">\n"                  //CSS for cosmetics
                     "<style>"     
 
 ".myDiv {"
@@ -81,6 +81,9 @@ String  StartWebsite() {
   ptr +=  "<a href=\"LEDCustom\" class=\"brk-btn\">";
   ptr +=    "LED On";
   ptr +=  "</a><br><br><br>";
+  ptr +=  "<a href=\"LEDPreset\" class=\"brk-btn\">";
+  ptr +=    "LED Preset";
+  ptr +=  "</a><br><br><br>";
   ptr +=  "<a href=\"LEDOff\" class=\"brk-btn\">";
   ptr +=    "LED Off";
   ptr +=  "</a><br><br><br>";
@@ -94,9 +97,9 @@ String  StartWebsite() {
   return ptr;
 }
 
-//-------------------------------------------------------------------------.----------------------.
-//                                                                         | Start Website 2 HTML |
-//-------------------------------------------------------------------------'----------------------'
+//-------------------------------------------------------------------------.----------------.
+//                                                                         | Website 2 HTML |
+//-------------------------------------------------------------------------'----------------'
 
 String SecondWebsite(){
     
@@ -127,6 +130,38 @@ String SecondWebsite(){
   ptr += "</form>";
 
   ptr += "</div>";
+
+  ptr += Ende;
+  return ptr;
+}
+
+//-------------------------------------------------------------------------.----------------.
+//                                                                         | Website 3 HTML |
+//-------------------------------------------------------------------------'----------------'
+
+String  ThirdWebsite() {
+
+  String  ptr = AnfangA;
+
+  ptr += "<title>Preset LED colors</title>\n";
+
+  ptr += AnfangB;
+
+  ptr += "<div class=\"myDiv\">";
+  ptr += "<h1 class=\"header1\">Preset LED colors</h1>\n";
+
+  ptr += "<form action = \"Colors\" method=\"get\">";                                  
+  ptr += "<label class=\"toggle\">";
+  ptr += "<input type=\"checkbox\" name = \"tickthebox\" value = \"1\">";
+  ptr += "<input type=\"submit\"  value = \"Energy\"></form><br><br> ";
+  ptr += "<input type=\"checkbox\" name = \"tickthebox\" value = \"2\">";
+  ptr += "<input type=\"submit\"  value = \"Relax\"></form><br><br>";
+  ptr += "<input type=\"checkbox\" name = \"tickthebox\" value = \"3\">";
+  ptr += "<input type=\"submit\"  value = \"Yellow\"></form><br><br>";
+  ptr += "<input type=\"checkbox\" name = \"tickthebox\" value = \"4\">";
+  ptr += "<input type=\"submit\"  value = \"Pink\"></form><br><br>";
+
+  ptr += "</label>";
 
   ptr += Ende;
   return ptr;
