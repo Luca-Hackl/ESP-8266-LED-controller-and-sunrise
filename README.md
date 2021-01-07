@@ -8,7 +8,7 @@
 * [To-Do](#To-Do)
 
 ## General info
-Creates a website that can remote control LED to any color the user wishes and creates an alarm clock that simulates sunrise. The sunrise does not work currently, I'm trying to fix it at the moment. The LED strip I used was the WS2812B with 60 LED's, if you have a different LED strip then you need to change the code. 
+Creates a website that can remote control LED to any color the user wishes and creates an alarm clock that simulates sunrise. The LED strip I used was the WS2812B with 60 LED's, if you have a different LED strip then you need to change the code. 
 I also used the ESP 8266, if you use the ESP32 or any other board you need to modify the code. I use a 5V 3A power supply to power the board and the LED's.
 
 ## Setup
@@ -20,5 +20,4 @@ To run this project, make sure you have connected the LED data pin to the correc
 * User can control LED's with a webserver and create any color with sliders
 
 ## To-Do
-* Fix sunrise alarm function
 * Improve design of websites
