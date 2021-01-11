@@ -37,7 +37,7 @@ void LEDOff() {
     strip.setPixelColor(i, strip.Color(0, 0, 0)); 
     strip.show();   //Turns the LED off and returns that value to the void "handle_Sensor"      
     }
-    
+  colorindex = 0;
   alarm = false;    //also sets the alarm to false, will deactivate the sunrise
   handle_main();
 }
